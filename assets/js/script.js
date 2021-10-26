@@ -99,7 +99,7 @@ var generatePassword = function() {
 
   if (!passObj.lowerChar && !passObj.upperChar && !passObj.numericChar && !passObj.specialChar){
     alert("You must select at least one type of character for your password");
-    generatePassword();
+    return generatePassword();
   }
  
   while (checkLength(passObj)) {
